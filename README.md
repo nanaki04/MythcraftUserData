@@ -1,6 +1,6 @@
 # MythcraftUserData
 
-**TODO: Add description**
+Simple dynamic data storage module using DETS intended to save gamestates for the game Mythcraft.
 
 ## Installation
 
