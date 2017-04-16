@@ -2,9 +2,7 @@ defmodule MythcraftUserData do
   @storage_path "storage/"
 
   def save_gamestate(game_id, exported_gamestate) do
-    IO.puts("saving gamestate: " <> get_filename(game_id))
     {:ok, file} = :dets.open_file get_filename(game_id), []
-    IO.puts("file opened")
 
     try do
       :dets.insert file, {:gamestate, exported_gamestate}
