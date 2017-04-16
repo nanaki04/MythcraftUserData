@@ -22,6 +22,10 @@ defmodule MythcraftUserData do
     end
   end
 
+  defp get_filename({:global, game_id}) do
+    get_filename(game_id)
+  end
+
   defp get_filename(game_id) do
     @storage_path <> game_id
   end
